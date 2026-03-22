@@ -10,22 +10,19 @@
 
 .hero__container {
   display: grid;
-  grid-template-columns: 1fr 42rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: center;
-  gap: 4rem;
+  gap: 3rem;
 
-  max-width: 90rem;
+  width: 100%;
+  max-width: var(--container-width);
   margin: 0 auto;
 }
 
-.container {
-  max-width: 90rem;
-  padding: 0 2.5rem;
-}
 
 .hero__content {
   max-width: 38rem;
-  margin-left: 0;
+  margin: 0 auto;
 }
 
 .hero__title {
@@ -122,12 +119,13 @@
 .hero__media {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .hero__image-wrap {
   position: relative;
-  width: 100%;
-  max-width: 38rem;
+  max-width: 36rem;
+  margin: 0 auto;
 }
 
 .hero__image {
