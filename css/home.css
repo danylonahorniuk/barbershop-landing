@@ -139,21 +139,22 @@
 
 .info-card {
   position: absolute;
-  padding: 1.8rem 1.8rem;
+  padding: 1.65rem 1.7rem;
   min-width: 13.2rem;
   background: linear-gradient(
     180deg,
-    rgba(35, 29, 16, 0.92) 0%,
-    rgba(16, 13, 8, 0.92) 100%
+    rgba(14, 12, 8, 0.82) 0%,
+    rgba(8, 7, 5, 0.78) 100%
   );
-  border: 0.0625rem solid rgba(212, 175, 79, 0.18);
+  border: 0.0625rem solid rgba(212, 175, 79, 0.22);
   box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.28);
-  backdrop-filter: blur(0.375rem);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 .info-card h3 {
-  margin: 0 0 0.6rem;
-  font-size: 1rem;
+  margin: 0 0 0.55rem;
+  font-size: 1.05rem;
   font-weight: 800;
   line-height: 1.2;
   color: #ffffff;
@@ -161,23 +162,44 @@
 
 .info-card p {
   margin: 0;
-  color: #b6b0a0;
-  font-size: 0.85rem;
-  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 0.92rem;
+  line-height: 1.4;
+  font-weight: 500;
 }
 
 .info-card__stars {
-  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-bottom: 0.95rem;
   color: var(--accent);
-  font-size: 1rem;
-  letter-spacing: 0.28rem;
+}
+
+.info-card__stars svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  fill: currentColor;
+  flex-shrink: 0;
 }
 
 .info-card__icon {
-  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 0.95rem;
   color: var(--accent);
-  font-size: 1.45rem;
-  line-height: 1;
+}
+
+.info-card__icon svg {
+  width: 1.95rem;
+  height: 1.95rem;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.9;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
 }
 
 .info-card--rating {
@@ -195,36 +217,6 @@
   left: -1.5rem;
 }
 
-.info-card--hours {
-  bottom: 6.6rem;
-  right: -2rem;
-}
-
-.hero__scroll {
-  display: flex;
-  justify-content: center;
-  padding-top: 1rem;
-}
-
-.hero__mouse {
-  position: relative;
-  width: 2.1rem;
-  height: 3.35rem;
-  border: 0.125rem solid rgba(212, 175, 79, 0.7);
-  border-radius: 1.25rem;
-}
-
-.hero__mouse::before {
-  content: "";
-  position: absolute;
-  top: 0.5rem;
-  left: 50%;
-  width: 0.35rem;
-  height: 0.7rem;
-  border-radius: 0.5rem;
-  background-color: var(--accent);
-  transform: translateX(-50%);
-}
 
 /* 1600-1750 */
 @media (max-width: 110rem) {
