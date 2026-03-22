@@ -1,0 +1,190 @@
+:root {
+  --bg-color: #050505;
+  --text-color: #ffffff;
+  --muted-text: #9ca0ad;
+  --accent: #d4af4f;
+  --accent-dark: #b89437;
+  --border-color: rgba(255, 255, 255, 0.08);
+  --container-width: 106rem;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: calc(var(--container-width) + 4rem);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* HEADER */
+.header {
+  background-color: #050505;
+}
+
+.header__container {
+  min-height: 6.25rem;
+
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+.logo__icon {
+  color: var(--accent);
+  font-size: 1.7rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.logo__text {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 2.75rem;
+}
+
+.nav__link {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #d7d9df;
+  transition: color 0.3s ease;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+  color: var(--accent);
+}
+
+.header__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 11.5rem;
+  min-height: 4.25rem;
+  padding: 1rem 1.75rem;
+  background-color: var(--accent);
+  color: #111111;
+  font-size: 0.95rem;
+  font-weight: 800;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.header__btn:hover,
+.header__btn:focus {
+  background-color: var(--accent-dark);
+  transform: translateY(-0.125rem);
+}
+
+/* FOOTER */
+.footer {
+  border-top: 0.0625rem solid var(--border-color);
+  padding: 1.5rem 0;
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__text {
+  margin: 0;
+  color: var(--muted-text);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 75rem) {
+  .nav__list {
+    gap: 1.75rem;
+  }
+
+  .nav__link {
+    font-size: 0.875rem;
+  }
+
+  .header__btn {
+    min-width: 9rem;
+    min-height: 3.5rem;
+  }
+}
+
+@media (max-width: 62rem) {
+  .header__container {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .nav {
+    order: 3;
+    width: 100%;
+    margin: 0;
+  }
+
+  .nav__list {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem 1.25rem;
+  }
+}
+
+@media (max-width: 36rem) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .header__btn {
+    width: 100%;
+  }
+}
