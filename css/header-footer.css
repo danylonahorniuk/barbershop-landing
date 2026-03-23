@@ -145,22 +145,178 @@ ul {
   transform: translateY(-0.1rem);
 }
 
-/* FOOTER */
 .footer {
-  border-top: 0.0625rem solid var(--border-color);
-  padding: 1.5rem 0;
+  padding: 3.8rem 0 0; /* було більше */
+  background-color: #050505;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
+/* ВАЖЛИВО: центруємо і звужуємо */
+.footer .container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* GRID */
 .footer__container {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr 1fr;
+  gap: 2.2rem; /* було 3rem */
+}
+
+/* трохи стримуємо перший блок */
+.footer__col--brand {
+  max-width: 18rem;
+}
+
+/* LOGO */
+.footer__desc {
+  margin-top: 1.2rem;
+  color: #9aa4b7;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* TITLES */
+.footer__title {
+  margin: 0 0 1.1rem;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+/* LINKS */
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.footer__list a {
+  color: #9aa4b7;
+  font-size: 0.93rem;
+  transition: color 0.3s;
+}
+
+.footer__list a:hover {
+  color: var(--accent);
+}
+
+/* CONTACTS */
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footer__contacts li {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: #9aa4b7;
+  font-size: 0.93rem;
+}
+
+.footer__contacts svg {
+  width: 0.95rem;
+  height: 0.95rem;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.8;
+}
+
+/* SOCIALS */
+.footer__socials {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.footer__social {
+  width: 2.4rem;
+  height: 2.4rem;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  background: #0f0f0f;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+
+  transition: all 0.3s ease;
 }
 
-.footer__text {
+.footer__social svg {
+  width: 1.1rem;
+  height: 1.1rem;
+  stroke: #9aa4b7;
+  fill: none;
+  stroke-width: 1.8;
+}
+
+.footer__social:hover {
+  border-color: rgba(212, 175, 79, 0.5);
+  background: #161616;
+}
+
+.footer__social:hover svg {
+  stroke: var(--accent);
+}
+
+/* BOTTOM */
+.footer__bottom {
+  margin-top: 2.2rem; /* було 3.5rem */
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 1.2rem 0; /* компактніше */
+}
+
+.footer__bottom-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__bottom p {
   margin: 0;
-  color: var(--muted-text);
-  font-size: 0.95rem;
+  color: #6f7888;
+  font-size: 0.88rem;
+}
+
+.footer__links {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.footer__links a {
+  color: #6f7888;
+  font-size: 0.88rem;
+  transition: color 0.3s;
+}
+
+.footer__links a:hover {
+  color: var(--accent);
+}
+
+/* RESPONSIVE */
+@media (max-width: 75rem) {
+  .footer__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.8rem;
+  }
+
+  .footer__bottom-container {
+    flex-direction: column;
+    gap: 0.9rem;
+  }
+}
+
+@media (max-width: 48rem) {
+  .footer {
+    padding: 3rem 0 0;
+  }
+
+  .footer__container {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 75rem) {
