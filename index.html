@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./css/locations.css" />
     <link rel="stylesheet" href="./css/masters.css" />
     <link rel="stylesheet" href="./css/reviews.css" />
+    <link rel="stylesheet" href="./css/booking.css" />
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -934,6 +935,154 @@
       <div class="reviews__summary-text">
         <strong>5.0</strong>
         <span>на основі 200+ відгуків</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="booking" id="booking">
+  <div class="container">
+    <div class="booking__header">
+      <h2 class="booking__title">
+        Записатися на <span>візит</span>
+      </h2>
+      <p class="booking__subtitle">
+        Оберіть зручний спосіб запису або зв'яжіться з нами будь-яким зручним способом
+      </p>
+    </div>
+
+    <div class="booking__layout">
+      <div class="booking__form-wrap">
+        <form class="booking-form">
+          <div class="booking-form__group">
+            <label for="name" class="booking-form__label">Ваше ім'я *</label>
+            <input
+              id="name"
+              type="text"
+              class="booking-form__input"
+              placeholder="Введіть ваше ім'я"
+            />
+          </div>
+
+          <div class="booking-form__group">
+            <label for="phone" class="booking-form__label">Номер телефону *</label>
+            <input
+              id="phone"
+              type="tel"
+              class="booking-form__input"
+              placeholder="+380 (XX) XXX-XX-XX"
+            />
+          </div>
+
+          <div class="booking-form__group">
+            <label for="location" class="booking-form__label">Оберіть локацію *</label>
+            <div class="booking-form__select-wrap">
+              <select id="location" class="booking-form__select">
+                <option selected disabled>Оберіть барбершоп</option>
+                <option>Legion Podil</option>
+                <option>Legion Pechersk</option>
+                <option>Legion Obolon</option>
+                <option>Legion Khreshchatyk</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="booking-form__group">
+            <label for="service" class="booking-form__label">Оберіть послугу *</label>
+            <div class="booking-form__select-wrap">
+              <select id="service" class="booking-form__select">
+                <option selected disabled>Оберіть послугу</option>
+                <option>Чоловіча стрижка</option>
+                <option>Стрижка бороди</option>
+                <option>Комплекс стрижка + борода</option>
+                <option>Преміум догляд</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="booking-form__group">
+            <label for="comment" class="booking-form__label">
+              Коментар (необов'язково)
+            </label>
+            <textarea
+              id="comment"
+              class="booking-form__textarea"
+              placeholder="Бажаний час, додаткові побажання..."
+            ></textarea>
+          </div>
+
+          <button type="submit" class="booking-form__submit">
+            <span>Надіслати запит</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 3 10 14"></path>
+              <path d="M21 3 14 21l-4-7-7-4 18-7z"></path>
+            </svg>
+          </button>
+        </form>
+      </div>
+
+      <div class="booking__info">
+        <div class="booking__info-block">
+          <h3 class="booking__info-title">Інші способи зв'язку</h3>
+
+          <div class="booking-contact">
+            <div class="booking-contact__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 4h3l2 5-2 1.5a14 14 0 0 0 5.5 5.5L15 14l5 2v3a2 2 0 0 1-2 2A15 15 0 0 1 3 6a2 2 0 0 1 2-2z"></path>
+              </svg>
+            </div>
+            <div class="booking-contact__content">
+              <span class="booking-contact__label">Зателефонуйте нам</span>
+              <strong class="booking-contact__value">+380 (44) 123-45-67</strong>
+            </div>
+          </div>
+
+          <div class="booking-contact">
+            <div class="booking-contact__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 4c4.4 0 8 2.9 8 6.5S16.4 17 12 17c-.8 0-1.6-.1-2.3-.3L5 20l1.4-4C5 14.8 4 12.8 4 10.5 4 6.9 7.6 4 12 4z"></path>
+              </svg>
+            </div>
+            <div class="booking-contact__content">
+              <span class="booking-contact__label">Telegram</span>
+              <strong class="booking-contact__value">@legion_barbershop</strong>
+            </div>
+          </div>
+
+          <div class="booking-contact">
+            <div class="booking-contact__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+                <circle cx="12" cy="12" r="4"></circle>
+                <circle cx="17" cy="7" r="1"></circle>
+              </svg>
+            </div>
+            <div class="booking-contact__content">
+              <span class="booking-contact__label">Instagram</span>
+              <strong class="booking-contact__value">@legion.kyiv</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="booking__hours">
+          <h3 class="booking__info-title">Графік роботи</h3>
+
+          <div class="booking__hours-row">
+            <span>Понеділок - П'ятниця</span>
+            <strong>10:00 - 21:00</strong>
+          </div>
+
+          <div class="booking__hours-row">
+            <span>Субота - Неділя</span>
+            <strong>10:00 - 21:00</strong>
+          </div>
+        </div>
+
+        <div class="booking__note">
+          Записуйтесь заздалегідь для гарантованого часу візиту. Онлайн-запис
+          доступний на всі локації.
+        </div>
       </div>
     </div>
   </div>
