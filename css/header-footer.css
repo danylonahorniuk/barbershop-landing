@@ -147,7 +147,12 @@ ul {
 
 .footer {
   padding: 3.8rem 0 0; /* було більше */
-  background-color: #050505;
+  background: radial-gradient(
+      circle at 20% 30%,
+      rgba(212, 175, 79, 0.06),
+      transparent 40%
+    ),
+    #07090d;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 

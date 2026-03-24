@@ -268,8 +268,16 @@
   font-weight: 700;
 }
 
+.booking__contacts-block {
+  margin-bottom: 1rem;
+}
+
 .booking__hours {
   padding: 1.35rem 1.2rem;
+}
+
+.booking__hours {
+  margin-bottom: 1rem;
 }
 
 .booking__hours-row {
