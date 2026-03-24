@@ -149,21 +149,35 @@
 }
 
 .reviews__summary {
-  max-width: 33rem;
-  margin: 0 auto;
-  padding: 1.4rem 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.9rem;
+
+  max-width: 26rem; /* менше ніж було 33rem */
+  margin: 2.2rem auto 0;
+
+  padding: 1rem 1.4rem; /* трохи більше ніж badge, але не громіздко */
+
   background: linear-gradient(
     180deg,
     #141414 0%,
     #0f0f0f 100%
   );
+
   border: 1px solid rgba(255, 255, 255, 0.04);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
+
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* hover у стилі сайту 
+.reviews__summary:hover {
+  border-color: rgba(212, 175, 79, 0.3);
+  box-shadow: 0 0 0 1px rgba(212, 175, 79, 0.08);
+}
+*/
+
+/* ⭐ ЗІРКИ */
 .reviews__summary-stars {
   display: flex;
   align-items: center;
@@ -172,27 +186,28 @@
 }
 
 .reviews__summary-stars svg {
-  width: 1.15rem;
-  height: 1.15rem;
+  width: 1.05rem;
+  height: 1.05rem;
   fill: currentColor;
 }
 
+/* 🧾 ТЕКСТ */
 .reviews__summary-text {
   display: flex;
   align-items: baseline;
-  gap: 0.7rem;
+  gap: 0.6rem;
 }
 
 .reviews__summary-text strong {
   color: #ffffff;
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   line-height: 1;
   font-weight: 800;
 }
 
 .reviews__summary-text span {
   color: #9aa4b7;
-  font-size: 0.98rem;
+  font-size: 0.92rem;
   line-height: 1.4;
 }
 
