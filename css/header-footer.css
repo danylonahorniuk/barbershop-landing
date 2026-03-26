@@ -65,14 +65,14 @@ ul {
 
 /* контейнер */
 .header__container {
-  max-width: var(--container-width);
+  max-width: calc(var(--container-width) + 4rem); /* вирівнює з hero */
   margin: 0 auto;
   padding: 0 2rem;
   min-height: 6.25rem;
 
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  justify-content: space-between;
 }
 
 /* ЛОГО */
@@ -81,6 +81,12 @@ ul {
   align-items: center;
   gap: 0.65rem;
   flex-shrink: 0;
+  justify-self: start;
+}
+
+.logo {
+  justify-self: start;
+  margin-left: 4rem; /* рухає вправо */
 }
 
 .logo__icon {
@@ -101,6 +107,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  grid-column: 2;
 }
 
 .nav__list {
@@ -126,6 +133,9 @@ ul {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+
+  justify-self: start; /* більше не прилипає вправо */
+  margin-left: 5rem;   /* регулює відстань від меню */
 
   padding: 0.7rem 1.3rem;
 
