@@ -11,8 +11,8 @@
 
 .services__title {
   margin: 0 0 1rem;
-  font-size: clamp(2.6rem, 4vw, 4.5rem);
-  line-height: 1.05;
+  font-size: clamp(2.2rem, 3.6vw, 3.8rem);
+  line-height: 1.06;
   font-weight: 800;
   letter-spacing: -0.04em;
   color: #ffffff;
@@ -25,8 +25,8 @@
 .services__subtitle {
   margin: 0;
   color: #97a1b5;
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 1.16rem;
+  line-height: 1.75;
 }
 
 .services__list {
@@ -161,11 +161,12 @@
 
   .services__title {
     margin-bottom: 1rem;
-    font-size: clamp(2.2rem, 8vw, 3.4rem);
+    font-size: clamp(1.95rem, 7vw, 2.9rem);
   }
 
   .services__subtitle {
-    font-size: 0.98rem;
+    font-size: 1.02rem;
+    line-height: 1.68;
   }
 
   .services__list {

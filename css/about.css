@@ -22,7 +22,7 @@
 
 .about__title {
   margin: 0 0 2.2rem;
-  font-size: clamp(2.6rem, 4.2vw, 4.6rem);
+  font-size: clamp(2.2rem, 3.6vw, 3.8rem);
   line-height: 1.03;
   font-weight: 800;
   letter-spacing: -0.04em;
@@ -42,8 +42,8 @@
 .about__text p {
   margin: 0 0 1.6rem;
   color: #9ba3b7;
-  font-size: 1.04rem;
-  line-height: 1.62;
+  font-size: 1.16rem;
+  line-height: 1.75;
 }
 
 .about__text p:last-child {
@@ -53,7 +53,7 @@
 .about__stats {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, max-content));
-  gap: 3.5rem;
+  gap: 2.6em;
 }
 
 .about__stat {
@@ -64,14 +64,14 @@
 
 .about__stat strong {
   color: var(--accent);
-  font-size: 2.35rem;
+  font-size: 1.85rem;
   line-height: 1;
   font-weight: 700;
 }
 
 .about__stat span {
   color: #8f97ab;
-  font-size: 0.98rem;
+  font-size: 0.92rem;
   line-height: 1.35;
 }
 
@@ -100,7 +100,7 @@
   }
 
   .about__title {
-    font-size: clamp(2.4rem, 4vw, 4rem);
+    font-size: clamp(2rem, 3.4vw, 3.4rem);
   }
 
   .about__text {
@@ -158,7 +158,7 @@
 
   .about__title {
     margin-bottom: 1.6rem;
-    font-size: clamp(2.2rem, 8vw, 3.4rem);
+    font-size: clamp(1.9rem, 7vw, 2.9rem);
   }
 
   .about__text p {
