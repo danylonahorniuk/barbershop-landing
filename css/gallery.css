@@ -93,6 +93,9 @@
 .space-gallery__item--large .space-gallery__caption {
   font-size: 1.4rem;
 }
+.space-gallery__item--large .space-gallery__image {
+  object-position: center 30%;
+}
 
 .space-gallery__item:hover .space-gallery__image {
   transform: scale(1.06);
