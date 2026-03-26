@@ -4,8 +4,9 @@
 }
 
 .space-gallery .container {
-  max-width: 96rem;
-  padding: 0 2.5rem;
+  max-width: 72rem; /* було 96rem */
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
 .space-gallery__header {
@@ -37,19 +38,19 @@
 .space-gallery__grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.25rem;
+  gap: 0.9rem; /* було 1.25rem */
 }
 
 .space-gallery__item {
   position: relative;
   overflow: hidden;
   background: #0c0f14;
-  height: 16rem;
+  height: 11rem;
 }
 
 .space-gallery__item--large {
   grid-column: 1 / -1;
-  height: 27rem;
+  height: 18rem;
 }
 
 .space-gallery__image {
@@ -90,7 +91,7 @@
 }
 
 .space-gallery__item--large .space-gallery__caption {
-  font-size: 1.9rem;
+  font-size: 1.4rem;
 }
 
 .space-gallery__item:hover .space-gallery__image {
@@ -181,5 +182,39 @@
 
   .space-gallery__item--large .space-gallery__caption {
     font-size: 1.35rem;
+  }
+}
+
+@media (max-width: 96rem) {
+  .space-gallery__item {
+    height: 10.5rem;
+  }
+
+  .space-gallery__item--large {
+    height: 16.5rem;
+  }
+}
+
+@media (max-width: 75rem) {
+  .space-gallery__grid {
+    gap: 0.8rem;
+  }
+
+  .space-gallery__item {
+    height: 10rem;
+  }
+
+  .space-gallery__item--large {
+    height: 15rem;
+  }
+}
+
+@media (max-width: 48rem) {
+  .space-gallery__item {
+    height: 10.5rem;
+  }
+
+  .space-gallery__item--large {
+    height: 14rem;
   }
 }
