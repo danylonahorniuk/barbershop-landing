@@ -22,8 +22,8 @@
 .locations__title {
   margin: 0 0 0.9rem;
   color: #ffffff;
-  font-size: clamp(2.4rem, 4.1vw, 4.2rem);
-  line-height: 1.08;
+  font-size: clamp(2.2rem, 3.6vw, 3.8rem);
+  line-height: 1.06;
   font-weight: 800;
   letter-spacing: -0.04em;
 }
@@ -35,8 +35,8 @@
 .locations__subtitle {
   margin: 0;
   color: #97a1b5;
-  font-size: 1rem;
-  line-height: 1.55;
+  font-size: 1.16rem;
+  line-height: 1.75;
 }
 
 .locations__layout {
@@ -121,8 +121,8 @@
   align-items: center;
   gap: 0.65rem;
   color: #9aa4b7;
-  font-size: 0.93rem;
-  line-height: 1.4;
+  font-size: 0.95rem;
+  line-height: 1.45;
 }
 
 .location-card__icon {
@@ -192,11 +192,12 @@
   }
 
   .locations__title {
-    font-size: clamp(2.2rem, 8vw, 3.4rem);
-  }
+  font-size: clamp(1.95rem, 7vw, 2.9rem);
+}
 
   .locations__subtitle {
-    font-size: 0.96rem;
+    font-size: 1.02rem;
+    line-height: 1.68;
   }
 
   .locations__map-wrap {
