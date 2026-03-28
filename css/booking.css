@@ -102,6 +102,10 @@
   min-height: 8rem;
   padding: 0.95rem 1rem;
   resize: vertical;
+  display: block;
+}
+.booking-form__select:invalid {
+  color: #7f8aa0;
 }
 
 .booking-form__input::placeholder,
@@ -123,7 +127,17 @@
 .booking-form__select {
   appearance: none;
   cursor: pointer;
-  padding-right: 2.8rem;
+  padding: 0 2.8rem 0 1rem;
+  color: #ffffff;
+}
+
+.booking-form__select option {
+  color: #111111;
+  background-color: #ffffff;
+}
+
+.booking-form__select option:disabled {
+  color: #7f8aa0;
 }
 
 .booking-form__select-wrap::after {
