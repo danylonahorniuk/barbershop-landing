@@ -21,6 +21,33 @@ section[id] {
   scroll-margin-top: 7.5rem;
 }
 
+.nav__link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav__link::after {
+  transition: all 0.3s ease;
+}
+
+.nav__link.active {
+  color: #fff;
+}
+
+.nav__link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+
+  background: linear-gradient(90deg, #c5a47e, #f5d7b2, #c5a47e);
+  border-radius: 2px;
+
+  box-shadow: 0 0 6px rgba(197, 164, 126, 0.6);
+}
+
 *,
 *::before,
 *::after {
