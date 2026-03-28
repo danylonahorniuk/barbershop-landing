@@ -223,6 +223,10 @@ ul {
   padding: 0 2rem;
 }
 
+.footer .logo {
+  margin-left: 0;
+}
+
 /* GRID */
 .footer__container {
   display: grid;
