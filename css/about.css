@@ -168,12 +168,16 @@
   }
 
   .about__stats {
-    grid-template-columns: 1fr;
-    gap: 1.25rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
   }
 
   .about__stat strong {
-    font-size: 2rem;
+    font-size: 1.75rem;
+  }
+
+  .about__stat span {
+    font-size: 0.85rem;
   }
 
   .about__image {
