@@ -392,21 +392,44 @@
 
 @media (max-width: 48rem) {
   .hero__title {
-    font-size: clamp(2.5rem, 10vw, 3.75rem);
+    font-size: clamp(2.3rem, 9vw, 3.4rem);
+    margin-bottom: 1rem;
   }
 
   .hero__text {
-    font-size: 1rem;
-    margin-bottom: 2rem;
+    font-size: 0.97rem;
+    margin-bottom: 1.5rem;
   }
 
+  /* Статистика — завжди в ряд (3 рівні колонки) */
   .hero__stats {
-    gap: 1.75rem;
-    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0;
+    margin-bottom: 1.75rem;
   }
 
-  .btn {
+  .hero__stat {
+    gap: 0.35rem;
+  }
+
+  .hero__stat strong {
+    font-size: 1.35rem;
+  }
+
+  .hero__stat span {
+    font-size: 0.82rem;
+    line-height: 1.35;
+  }
+
+  /* Лише основна кнопка на мобільному */
+  .btn--primary {
     width: 100%;
+    min-width: 0;
+  }
+
+  .btn--secondary {
+    display: none;
   }
 
   /* Info-картки стають сіткою 2×2 під зображенням */
