@@ -2,6 +2,28 @@ const header = document.querySelector('.header');
 const navLinks = document.querySelectorAll('.nav__link');
 const sections = document.querySelectorAll('section[id]');
 
+// ===== HAMBURGER MENU =====
+const navToggle = document.getElementById('nav-toggle');
+const mainNav = document.getElementById('main-nav');
+
+navToggle.addEventListener('click', () => {
+  const isOpen = mainNav.classList.toggle('is-open');
+  navToggle.classList.toggle('is-active');
+  navToggle.setAttribute('aria-expanded', String(isOpen));
+  document.body.style.overflow = isOpen ? 'hidden' : '';
+});
+
+const closeNav = () => {
+  mainNav.classList.remove('is-open');
+  navToggle.classList.remove('is-active');
+  navToggle.setAttribute('aria-expanded', 'false');
+  document.body.style.overflow = '';
+};
+
+mainNav.querySelectorAll('.nav__link, .nav__book-btn').forEach(link => {
+  link.addEventListener('click', closeNav);
+});
+
 // ===== ПЛАВНИЙ СКРОЛ =====
 navLinks.forEach(link => {
   link.addEventListener('click', function(e) {

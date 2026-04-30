@@ -41,7 +41,7 @@
   <span class="logo__text">LEGION</span>
 </a>
 
-        <nav class="nav">
+        <nav class="nav" id="main-nav">
           <ul class="nav__list">
             <li><a href="#about" class="nav__link">Про нас</a></li>
             <li><a href="#services" class="nav__link">Послуги</a></li>
@@ -50,9 +50,22 @@
             <li><a href="#masters" class="nav__link">Майстри</a></li>
             <li><a href="#reviews" class="nav__link">Відгуки</a></li>
           </ul>
+          <a href="#booking" class="nav__book-btn">Записатися</a>
         </nav>
 
         <a href="#booking" class="header__btn">Записатися</a>
+
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-label="Відкрити меню"
+          aria-expanded="false"
+          aria-controls="main-nav"
+        >
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
       </div>
     </header>
 
@@ -207,6 +220,8 @@
           src="./assets/images/barbershop-vibe.jpg"
           alt="Інтер'єр барбершопу Legion"
           class="about__image"
+          loading="lazy"
+          decoding="async"
         />
       </div>
     </div>
@@ -441,6 +456,8 @@
           src="./assets/images/barber-gallery1.jpg"
           alt="Атмосфера барбершопу"
           class="space-gallery__image"
+          loading="lazy"
+          decoding="async"
         />
         <div class="space-gallery__overlay"></div>
         <div class="space-gallery__caption">Атмосфера барбершопу</div>
@@ -451,6 +468,8 @@
           src="./assets/images/barber-gallery4.jpg"
           alt="Професійні інструменти"
           class="space-gallery__image"
+          loading="lazy"
+          decoding="async"
         />
         <div class="space-gallery__overlay"></div>
         <div class="space-gallery__caption">Професійні інструменти</div>
@@ -461,6 +480,8 @@
           src="./assets/images/barber-gallery5.jpg"
           alt="Сучасний інтер'єр"
           class="space-gallery__image"
+          loading="lazy"
+          decoding="async"
         />
         <div class="space-gallery__overlay"></div>
         <div class="space-gallery__caption">Сучасний інтер'єр</div>
@@ -471,6 +492,8 @@
           src="./assets/images/barber-gallery2.jpg"
           alt="Процес роботи"
           class="space-gallery__image"
+          loading="lazy"
+          decoding="async"
         />
         <div class="space-gallery__overlay"></div>
         <div class="space-gallery__caption">Процес роботи</div>
@@ -671,6 +694,8 @@
             src="./assets/images/barber-sasha.jpg"
             alt="Олександр Ковальчук"
             class="master-card__image"
+            loading="lazy"
+            decoding="async"
           />
         </div>
 
@@ -688,6 +713,8 @@
             src="./assets/images/barber-master.jpg"
             alt="Дмитро Петренко"
             class="master-card__image"
+            loading="lazy"
+            decoding="async"
           />
         </div>
 
@@ -705,6 +732,8 @@
             src="./assets/images/barber.jpg"
             alt="Максим Іваненко"
             class="master-card__image"
+            loading="lazy"
+            decoding="async"
           />
         </div>
 

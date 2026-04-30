@@ -369,10 +369,12 @@
   .hero__content {
     max-width: 100%;
     padding-top: 0;
+    margin-left: 0;
   }
 
   .hero__media {
     justify-content: center;
+    margin-right: 0;
   }
 
   .hero__image-wrap {
@@ -407,41 +409,56 @@
     width: 100%;
   }
 
-  .hero__image {
-    height: 30rem;
-  }
-
-  .info-card {
-    padding: 1rem;
-    min-width: 10rem;
-  }
-
-  .info-card h3 {
-    font-size: 1rem;
-  }
-
-  .info-card p {
-    font-size: 0.875rem;
-  }
-}
-
-@media (max-width: 36rem) {
-  .container {
-    padding: 0 1rem;
-  }
-
+  /* Info-картки стають сіткою 2×2 під зображенням */
   .hero__image-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
     max-width: 100%;
   }
 
   .hero__image {
+    grid-column: 1 / -1;
     height: 26rem;
   }
 
   .info-card {
     position: static;
-    width: 100%;
-    margin-top: 0.75rem;
+    min-width: 0;
+    padding: 1rem;
+  }
+
+  .info-card h3 {
+    font-size: 0.95rem;
+    margin-bottom: 0.35rem;
+  }
+
+  .info-card p {
+    font-size: 0.82rem;
+  }
+
+  .info-card__icon {
+    margin-bottom: 0.6rem;
+  }
+
+  .info-card__icon svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .info-card__stars {
+    margin-bottom: 0.6rem;
+  }
+
+  .info-card__stars svg {
+    width: 0.95rem;
+    height: 0.95rem;
+  }
+}
+
+@media (max-width: 36rem) {
+  .hero__image {
+    height: 22rem;
   }
 }
 

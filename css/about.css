@@ -133,6 +133,7 @@
 
   .about__content {
     max-width: 100%;
+    margin-left: 0;
   }
 
   .about__text {
